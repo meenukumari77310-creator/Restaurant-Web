@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foodie Restaurant</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.png" alt="Logo">
+        <span class="ms-2">Foodie</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <form class="d-flex">
+          <input type="search" class="form-control me-2" placeholder="Search">
+          <button class="btn btn-outline-light">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-text">
+      <h2>Welcome to Foodie</h2>
+      <p>Delicious food made with love</p>
+      <a href="#menu" class="btn btn-main">View Menu</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">About Us</h2>
+      <p>Welcome to <b>Foodie</b>, where passion for food meets exceptional service. Located in the heart of <b>India</b>, we bring together fresh ingredients, bold flavors, and a warm atmosphere for an unforgettable dining experience.</p>
+      <p>Our journey began <b>10 years ago</b> when our founder <b>Rudra</b> envisioned a place where every dish tells a story. We combine traditional recipes with modern twists using locally sourced ingredients.</p>
+    </div>
+
+    <div class="container chef mt-5">
+      <h4 class="mb-3">Our Master Chefs</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/chef1.jpg" alt="Chef 1">
+            <div class="card-body">
+              <h5>Alice Waters</h5>
+              <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/chef4.jpg" alt="Chef 2">
+            <div class="card-body">
+              <h5>Julia Child</h5>
+              <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="fa fa-star-half-alt"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/chef3.jpg" alt="Chef 3">
+            <div class="card-body">
+              <h5>Gordon Ramsay</h5>
+              <span class="stars"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Menu</h2>
+
+      <h4 class="menu-category">Spicy Dishes</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish1.jfif" alt="Matar Paneer">
+            <div class="card-body">
+              <h5>Matar Paneer</h5>
+              <p>$18</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish2.jfif" alt="Pav Bhaji">
+            <div class="card-body">
+              <h5>Pav Bhaji</h5>
+              <p>$15</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/dish3.jfif" alt="Dosa Chutney">
+            <div class="card-body">
+              <h5>Dosa Chutney</h5>
+              <p>$16</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="menu-category">Sweet Dishes</h4>
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/sweet1.jpg" alt="Gujjia">
+            <div class="card-body">
+              <h5>Gujjia</h5>
+              <p>$18</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/sweet2.jpg" alt="Rasgulla">
+            <div class="card-body">
+              <h5>Rasgulla</h5>
+              <p>$23</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/sweet3.jpg" alt="Rasmalai">
+            <div class="card-body">
+              <h5>Rasmalai</h5>
+              <p>$25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="menu-category">Drinks</h4>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/drink1.jpg" alt="Juice">
+            <div class="card-body">
+              <h5>Juice</h5>
+              <p>$7</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/drink2.jpg" alt="Cold Coffee">
+            <div class="card-body">
+              <h5>Cold Coffee</h5>
+              <p>$10</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/drink3.jpg" alt="Hot Coffee">
+            <div class="card-body">
+              <h5>Hot Coffee</h5>
+              <p>$5</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 text-dark">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <p class="text-center mb-5">Have questions or want to make a reservation? Reach out — we're here to help!</p>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>Our Address</h5>
+          <p>123 Food Street, Arya Nagar, Mumbai, India</p>
+          <h5>Phone</h5>
+          <p><a href="tel:45546541545">45546541545</a></p>
+          <h5>Email</h5>
+          <p><a href="mailto:foodie1234@restaurant.com">foodie1234@restaurant.com</a></p>
+        </div>
+        <div class="col-md-6">
+          <div class="p-4 shadow-sm rounded bg-light">
+            <h5>Send Your Feedback</h5>
+            <form>
+              <input type="text" class="form-control mb-3" placeholder="Your Name">
+              <input type="email" class="form-control mb-3" placeholder="Your Email">
+              <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn-main">Send</button>
+              <button type="reset" class="btn btn-outline-secondary ms-2">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-white text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Foodie Restaurant. All Rights Reserved.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

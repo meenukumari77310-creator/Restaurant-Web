@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scroll offset for fixed navbar */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2c2c2c;
+  background: #fffdf7;
+}
+
+/* ---------------- NAVBAR ---------------- */
+.navbar {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.navbar-brand span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffb703;
+  letter-spacing: 1px;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #e0e0e0 !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffb703 !important;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 10, 10, 0.6)),
+              url('images/bg1.jpeg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffb703;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin: 15px 0 30px;
+  color: #fdfdfd;
+}
+
+.btn-main {
+  background: #ffb703;
+  color: #1a1f36;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-main:hover {
+  background: #fff;
+  color: #1a1f36;
+  transform: scale(1.07);
+}
+
+/* ---------------- ABOUT SECTION ---------------- */
+#about {
+  background: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#about h2 {
+  color: #1a1f36;
+  font-weight: 800;
+}
+
+#about p {
+  color: #444;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.chef .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.chef .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.chef img {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* ---------------- MENU SECTION ---------------- */
+#menu {
+  background: #e7e4e4;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#menu h2 {
+  color: #1a1f36;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.menu-category {
+  color: #d62828;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  border-left: 5px solid #ffb703;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+#menu .card {
+  border: none;
+  border-radius: 15px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 12px;
+}
+
+#menu .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+#menu img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#menu h5 {
+  color: #1a1f36;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+#menu p {
+  color: #d62828;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* ---------------- CONTACT SECTION ---------------- */
+#contact {
+  background: #fefcf8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#contact h2 {
+  color: #1a1f36;
+  font-weight: 800;
+}
+
+#contact a {
+  color: #d62828;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #ffb703;
+  text-decoration: underline;
+}
+
+#contact .bg-light {
+  background: #e7e4e4 !important;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  padding: 30px 0;
+}
+
+footer p {
+  color: #ffb703;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+footer a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffb703;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .navbar-brand img {
+    width: 55px;
+    height: 55px;
+  }
+}
